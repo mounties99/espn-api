@@ -16,7 +16,6 @@ class Team(object):
         self.wins = data['record']['overall']['wins']
         self.losses = data['record']['overall']['losses']
         self.ties = data['record']['overall']['ties']
-        self.values = data['values']
         self.logo_url = ''
         self.standing = data['playoffSeed']
         self.final_standing = data['rankCalculatedFinal']
