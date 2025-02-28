@@ -13,6 +13,7 @@ class Player(object):
         self.acquisitionType = json_parsing(data, 'acquisitionType')
         self.proTeam = PRO_TEAM_MAP.get(json_parsing(data, 'proTeamId'), json_parsing(data, 'proTeamId'))
         self.injuryStatus = json_parsing(data, 'injuryStatus')
+        self.keeperValue = json_personing(data, 'keeperValue')
         self.stats = {}
 
         player = data.get('playerPoolEntry', {}).get('player') or data['player']
