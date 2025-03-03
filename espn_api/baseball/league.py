@@ -82,7 +82,7 @@ class League(BaseLeague):
 
         return matchups
 
-    def recent_activity(self, size: int = 25, msg_type: str = None, offset: int = 0) -> List[Activity]:
+    def recent_activity(self, size: int = 25000, msg_type: str = None, offset: int = 0) -> List[Activity]:
         '''Returns a list of recent league activities (Add, Drop, Trade)'''
         if self.year < 2019:
             raise Exception('Cant use recent activity before 2019')
